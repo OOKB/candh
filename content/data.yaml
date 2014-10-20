@@ -1,0 +1,14 @@
+---
+  title: 'C&H Restoration & Renovation, LLC'
+  tagline: Specializing in the Restoration & Updating of Historic Homes
+  footer: ©2014 by C and H Restoration and Renovation, llc.
+  menu:
+    -
+      title: Projects
+      link: projects
+    -
+      title: About
+      link: about
+    -
+      title: Contact
+      link: contact

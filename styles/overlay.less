@@ -1,0 +1,139 @@
+/* *********************************************** */
+/* *********************************************** */
+/* »»»»»»» Project Overlay Related Styles «««««««« */
+/* *********************************************** */
+/* *********************************************** */
+
+#projects ul li.overlay {
+  position: fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  overflow: auto;
+  border: 20px solid black;
+  margin: 0;
+  width: 100%;
+  background: white;
+  padding: 40px;
+  z-index: 5;
+}
+
+#projects .overlay h1 {
+  font-size: 2em;
+  .oswald;
+  margin-bottom: .25em;
+}
+
+#projects .overlay p {
+  margin-bottom: 2em;
+}
+
+#projects .overlay ul.images {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+#projects .overlay ul.images li.img-preview {
+  height: auto;
+  width: calc(100% / 6);
+  margin: 0;
+  padding: .5%;
+}
+
+#projects .overlay ul.images li img {
+  width: 100%;
+  height: auto;
+}
+
+#projects .overlay ul.images li.img-detail {
+  background: rgba(255,255,255,.91);
+  border: 20px black solid;
+  position: fixed;
+  top:0;
+  right:0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+#projects .overlay ul.images li.img-detail:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.5%; /* Adjusts for spacing */
+}
+
+#projects .overlay ul.images li.img-detail img {
+  max-height: 99%;
+  max-width: 99%;
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.img-detail button {
+  width: 33%;
+  position: absolute;
+  float: none;
+  display: block;
+  z-index: 10;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  background: transparent;
+  border: none;
+}
+
+.img-detail button.left {
+  left: 0;
+}
+
+.img-detail button.right {
+  right: 0;
+}
+
+.img-detail button.left:hover {
+  background: linear-gradient( 90deg, rgba(0,0,0,.25), rgba(255,255,255,0));
+}
+
+.img-detail button.right:hover {
+  background: linear-gradient( 90deg, rgba(255,255,255,0), rgba(0,0,0,.25));
+}
+
+.overlay > div {
+  margin-bottom: 20px;
+}
+
+.overlay ul.project-nav li {
+  margin: 0 10px;
+}
+
+.overlay ul.project-nav li button {
+  width: 140px;
+  /**/
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  background: transparent;
+  padding: 10px;
+}
+
+.overlay ul.project-nav li button:hover {
+/*   background: linear-gradient( 0deg, rgba(0,0,0,.1), rgba(255,255,255,0)); */
+  border-color: black;
+  outline: none;
+}
+
+.overlay ul.project-nav li button:active {
+  background-color: rgba(0,0,0,.05);
+  box-shadow: inset 0px 2px 4px rgba(0,0,0,.2);
+  border-color: black;
+  outline: none;
+}

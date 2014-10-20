@@ -1,0 +1,10 @@
+/public/
+/node_modules/
+/prod/
+/app/data
+/app/*.js
+/app/*/*.js
+/app/*/*/*.js
+/app/static
+
+/gulp/rackspace.json
