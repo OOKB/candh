@@ -20,7 +20,7 @@ markdown = require 'gulp-markdown-to-json'
 runSequence = require 'run-sequence'
 clean = require 'gulp-clean'
 
-cf = require './gulp/cape-cf'
+cf = require './cape-cf'
 
 gulp.task "default", ['compile', 'templates', 'browser-sync', 'static', 'styles', 'projects', 'content', 'files'], ->
   gulp.watch './static/**', ['static']
