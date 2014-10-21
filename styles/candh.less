@@ -11,6 +11,7 @@ html, body {
   padding: 0;
   color: black;
 }
+
 a {
   color: black;
   text-decoration: none;
@@ -18,30 +19,48 @@ a {
 
 /* = header styles */
 header {
-  background: transparent url('https://unsplash.it/g/1600/800?image=491') center center no-repeat;
-  background-attachment: fixed;
+  background: darkgray url('https://unsplash.it/g/1600/800?image=491') center center no-repeat;
   background-size: cover;
   margin: 0;
   padding: 20px 0 0;
-  .text-center;
   height: 235px;
+  width: 100%;
+  .text-center;
 }
 
 header h1 {
   margin: 0px auto;
   padding: 0;
-  width:352px;
+  width:280px;
   height:154px;
   margin-bottom: 20px;
 }
 
 header h1 > a {
   display: block;
-  width: 352px;
+  width: 280px;
   height: 154px;
   background: transparent url('/img/candh-logo-white.png') center center no-repeat;
   background-size: contain;
   .hide-text;
+}
+
+@media (min-width: 768px) {
+  /* = header styles */
+  header {
+    height: 235px;
+    background-attachment: fixed;
+  }
+
+  header h1 {
+    width:352px;
+    height:154px;
+  }
+
+  header h1 > a {
+    width: 352px;
+    height: 154px;
+  }
 }
 
 header nav ul {
@@ -51,6 +70,7 @@ header nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  height: 41px;
 }
 
 header nav ul.fixed {
@@ -80,6 +100,7 @@ header nav ul li a {
   -o-transition: background 500ms ease, color 500ms ease;
   transition: background 500ms ease, color 500ms ease;
   .oswald;
+  font-size: 90%;
 }
 
 header nav ul li a:hover,
@@ -93,6 +114,12 @@ header nav ul li a:active {
   background-color: rgba(0,0,0,.05);
   box-shadow: inset 0px 2px 4px rgba(0,0,0,.2);
   color: black;
+}
+
+@media (min-width: 768px) {
+  header nav ul li a {
+    font-size: 100%;
+  }
 }
 
 /* /end header styles */
@@ -109,7 +136,7 @@ footer {
 section.middle {
   position: relative;
   max-width: 1000px;
-  height: 368px;
+  height: 250px;
   margin: 20px auto -75px;
 }
 
@@ -120,7 +147,7 @@ section.middle:before {
   opacity: .25;
   width: 100%;
   max-width: 1000px;
-  height: 368px;
+  height: 250px;
   background: transparent url('/img/hammers.png') center center no-repeat;
   background-size: contain;
   z-index: 1;
@@ -129,11 +156,26 @@ section.middle:before {
 section.middle p {
   position: absolute;
   width: 100%;
-  height: 368px;
+  height: 250px;
   background: transparent url('/img/middletext.png') center center no-repeat;
   background-size: contain;
   .hide-text;
   z-index:2;
+}
+
+@media (min-width: 768px) {
+  section.middle {
+    height: 368px;
+    margin: 20px auto -75px;
+  }
+
+  section.middle:before {
+    height: 368px;
+  }
+
+  section.middle p {
+    height: 368px;
+  }
 }
 
 /* = main section styles */
@@ -153,12 +195,14 @@ main section {
 
 #projects ul li {
   display: inline-block;
+  vertical-align: top;
 }
 
 #projects ul li.project-preview {
   width: 200px;
   margin: 0 40px;
   cursor: pointer;
+  margin-bottom: 2em;
 }
 
 #projects ul li.project-preview img {
@@ -166,7 +210,7 @@ main section {
   height: 200px;
   display: block;
   border-radius: 50%;
-  background: wheat;
+  background: darkgray;
 }
 
 #projects ul li.project-preview p {
@@ -214,10 +258,12 @@ main section {
 ul.contact-info {
   border-bottom: 1px solid black;
   padding-bottom: 2em;
+  margin-bottom: 2em;
 }
 
-#wufoo-k1w15b2z04cgvvi {
-  position: relative;
-  left: 18%;
-  margin-top: 2em;
+@media (min-width: 768px) {
+  #wufoo-k1w15b2z04cgvvi {
+    position: relative;
+    left: 18%;
+  }
 }

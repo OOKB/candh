@@ -11,20 +11,20 @@
   bottom:0;
   left:0;
   overflow: auto;
-  border: 20px solid black;
+  border: 10px solid black;
   margin: 0;
   width: 100%;
   background: white;
-  padding: 40px;
+  padding: 20px;
   z-index: 5;
 }
 
 .overlay button.close {
   position: fixed;
-  top: 30px;
-  right: 30px;
-  width: 60px;
-  height: 50px;
+  top: 15px;
+  right: 15px;
+  width: 50px;
+  height: 40px;
   font-size: 20px;
   line-height: 20px;
   background: transparent url('/img/hammers-mini.png') center center no-repeat;
@@ -56,9 +56,46 @@
 
 #projects .overlay ul.images li.img-preview {
   height: auto;
-  width: calc(100% / 6);
+  width: calc(100% / 3);
   margin: 0;
   padding: .5%;
+}
+
+@media (min-width: 480px) {
+  #projects .overlay ul.images li.img-preview {
+    height: auto;
+    width: calc(100% / 4);
+    margin: 0;
+    padding: .5%;
+  }
+}
+
+@media (min-width: 768px) {
+  #projects ul li.overlay {
+    border: 20px solid black;
+    padding: 40px;
+  }
+  .overlay button.close {
+    top: 30px;
+    right: 30px;
+    width: 60px;
+    height: 50px;
+  }
+  #projects .overlay ul.images li.img-preview {
+    height: auto;
+    width: calc(100% / 5);
+    margin: 0;
+    padding: .5%;
+  }
+}
+
+@media (min-width: 960px) {
+  #projects .overlay ul.images li.img-preview {
+    height: auto;
+    width: calc(100% / 6);
+    margin: 0;
+    padding: .5%;
+  }
 }
 
 #projects .overlay ul.images li img {
