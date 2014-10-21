@@ -1,4 +1,6 @@
 ---
-title: 1423 Bolton St.
+title: Bolton
 
 ---
+
+body text about the project

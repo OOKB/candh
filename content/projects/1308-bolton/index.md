@@ -1,4 +1,6 @@
 ---
-title: 1308 Bolton St.
+title: The Gargoyle House
 
 ---
+
+body text about the project
