@@ -19,6 +19,24 @@
   z-index: 5;
 }
 
+.overlay button.close {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  width: 60px;
+  height: 50px;
+  font-size: 20px;
+  line-height: 20px;
+  background: transparent url('/img/hammers-mini.png') center center no-repeat;
+  background-size: contain;
+  border: none;
+  padding: 0;
+  margin: 0;
+  .hide-text;
+  z-index: 20;
+  cursor: pointer;
+}
+
 #projects .overlay h1 {
   font-size: 2em;
   .oswald;
@@ -49,7 +67,7 @@
 }
 
 #projects .overlay ul.images li.img-detail {
-  background: rgba(255,255,255,.91);
+  background: rgba(255,255,255,.91) url('/img/loading.gif') center center no-repeat;
   border: 20px black solid;
   position: fixed;
   top:0;
