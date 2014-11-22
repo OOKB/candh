@@ -1,5 +1,5 @@
 React = require 'react'
-{ul, li, main, h1, div, img, a, button} = require 'reactionary'
+{ul, li, main, h1, div, img, a, button, small} = require 'reactionary'
 
 key = require 'keymaster'
 
@@ -98,6 +98,11 @@ module.exports = React.createClass
                     onClick: => @props.setProject @props.i-1
                     value: @props.i-1,
                       'Previous Project'
+        small
+          className: 'photographer',
+            a
+              href: @props.model.photographerurl
+              'Photos of ' + @props.model.title + ' by ' + @props.model.photographer + '.'
 
             if @props.i < 2
               li
