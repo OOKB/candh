@@ -98,12 +98,6 @@ module.exports = React.createClass
                     onClick: => @props.setProject @props.i-1
                     value: @props.i-1,
                       'Previous Project'
-        small
-          className: 'photographer',
-            a
-              href: @props.model.photographerurl
-              'Photos of ' + @props.model.title + ' by ' + @props.model.photographer + '.'
-
             if @props.i < 2
               li
                 className: 'next',
@@ -117,3 +111,11 @@ module.exports = React.createClass
                   button
                     onClick: @closeImg,
                       'Close'
+
+        small
+          className: 'photographer',
+            a
+              href: @props.model.photographerurl
+              'Photos of ' + @props.model.title + ' by ' + @props.model.photographer + '.'
+
+
