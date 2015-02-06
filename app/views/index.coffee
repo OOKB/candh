@@ -16,6 +16,9 @@ module.exports = React.createClass
         meta
           charSet: 'utf-8'
         meta
+          name: 'google-site-verification'
+          content: '-SvY_U2iCxUyRQgR4X4gNlNr5E5hez9CYswmT2606jM'
+        meta
           name: 'viewport'
           content: 'width=device-width, initial-scale=1'
         link
